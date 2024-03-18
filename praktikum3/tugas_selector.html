@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector</title>
+<style>
+    /*Adjacent Sibling Selector*/
+div + p {
+  color: yellow;
+}
+/*General Sibling Selector*/
+div ~ p {
+  background-color: blue;
+}
+/*The ::first-line Pseudo-element*/
+p::first-line {
+  color: #ff0000;
+  font-variant: small-caps;
+}
+/*The ::first-letter Pseudo-element*/
+p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+/*Pseudo-elements and HTML Classes*/
+p.intro::first-letter {
+  color: #ff0000;
+  font-size: 200%;
+}
+/*Multiple Pseudo-elements*/
+p::first-letter {
+  color: #ff0000;
+  font-size: xx-large;
+}
+
+p::first-line {
+  color: pink;
+  font-variant: small-caps;
+}
+/*The ::before Pseudo-element*/
+h1::before {
+  content: "🤣🤣";
+}
+/*The ::after Pseudo-element*/
+h1::after {
+  content: "👍👍";
+}
+/*The ::marker Pseudo-element*/
+::marker {
+  color: red;
+  font-size: 23px;
+}
+/*The ::selection Pseudo-element*/
+::selection {
+  color: red;
+  background: yellow;
+}
+</style>
+</head>
+<div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam magnam obcaecati minima ipsam corrupti totam quisquam iste explicabo in molestiae aperiam, sunt molestias dignissimos et praesentium facilis minus rem eveniet.</p>
+</div>
+<p>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel omnis totam nostrum maiores dolores, minima explicabo itaque perferendis molestiae commodi!
+</p>
+<h1>ini adalah emoji </h1>
+<ul>
+    <li>
+        ini marker pseudo element
+    </li>
+</ul>
+</body>
+</html>
