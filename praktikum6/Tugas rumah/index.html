@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Registrasi</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <h1>Form Registrasi</h1>
+    <form action="/submit" method="post" onsubmit="return validasi()" id="formRegistrasi">
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap Anda">
+        <span id="namaError" class="error"></span>
+        <br>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Masukkan username Anda">
+        <span id="usernameError" class="error"></span>
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Masukkan alamat email Anda">
+        <span id="emailError" class="error"></span>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Masukkan password Anda">
+        <span id="passwordError" class="error"></span>
+        <br>
+        <label for="konfirmasi_password">Konfirmasi Password:</label>
+        <input type="password" id="konfirmasi_password" name="konfirmasi_password" placeholder="Masukkan kembali password Anda">
+        <span id="konfirmasiPasswordError" class="error"></span>
+        <br>
+        <label for="no_telepon">Nomor Telepon:</label>
+        <input type="number" id="no_telepon" name="no_telepon" placeholder="Masukkan nomor telepon Anda">
+        <br>
+        <label for="jenis_kelamin">Jenis Kelamin:</label>
+        <select id="jenis_kelamin" name="jenis_kelamin">
+            <option value="laki-laki">Laki-laki</option>
+            <option value="perempuan">Perempuan</option>
+        </select>
+        <br>
+        <label for="alamat_website">Alamat Website:</label>
+        <input type="url" id="alamat_website" name="alamat_website" placeholder="Masukkan alamat website Anda">
+        <span id="alamatWebsiteError" class="error"></span>
+        <br>
+        <button type="submit">Daftar</button>
+    </form>
+
+    <script src="./script.js"></script>
+</body>
+</html>
